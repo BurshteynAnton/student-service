@@ -4,11 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Getter
 @Document(collection = "students")
+@NoArgsConstructor
 public class Student {
 	long id;
 	@Setter
